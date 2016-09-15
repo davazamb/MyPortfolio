@@ -1,0 +1,65 @@
+﻿@*@model Model.Usuario*@
+@{
+    ViewBag.Title = "Acerca de mi";
+}
+
+<div id="yo" class="page">
+    <h1 class="page-header">Acerca de mi</h1>
+    <div>
+
+        <!--Nav tabs-->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Informacion</a></li>
+            <li role="presentation"><a href="#ubicacion" aria-controls="ubicacion" role="tab" data-toggle="tab">Ubicacion</a></li>
+            <li role="presentation"><a href="#social" aria-controls="social" role="tab" data-toggle="tab">Social</a></li>
+        </ul>
+        <!--Tab panel-->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="info">
+                <div class="form-group">
+                    <label>Nombre</label>                    
+                    <input type="text" name="Nombre" class="form-control" placeholder="Ingrese su nombre"/>
+                </div>
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input type="text" name="Apellido" class="form-control" placeholder="Ingrese su apellido" />
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" name="Email" class="form-control" placeholder="Ingrese su correo" />
+                </div>
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <input type="text" name="telefono" class="form-control" placeholder="Ingrese su Telefono" />
+                </div>
+                <div class="form-group">
+                    <label>Foto de Perfil</label>
+                    <input type="text" name="Imagen" />
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="ubicacion">
+                <div class="form-group">
+                    <label>Pais</label>
+                    <select class="form-control">
+                        <option value="">Seleccione un pais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Ciudad</label>
+                    <input type="text" name="Ciudad" class="form-control" placeholder="Ingrese su Telefono" />
+                </div>
+                <div class="form-group">
+                    <label>Direccion</label>
+                    <input type="text" name="Direccion" class="form-control" placeholder="Ingrese su Telefono" />
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="social">
+                <div class="form-group">
+                    <label>Facebook</label>
+                    <input type="text" name="Direccion" class="form-control" placeholder="Ingrese su Telefono" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
